@@ -1,0 +1,14 @@
+{
+  "name": "cross-env-npm-env-vars",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^3.2.4"
+  },
+  "scripts": {
+    "echo_name": "cross-env echo $npm_package_name"
+  }
+}
