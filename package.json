@@ -9,6 +9,6 @@
     "cross-env": "^3.2.4"
   },
   "scripts": {
-    "echo_name": "cross-env echo $npm_package_name"
+    "echo_name": "cross-env node -e \"console.log(process.env.npm_package_name)\""
   }
 }
