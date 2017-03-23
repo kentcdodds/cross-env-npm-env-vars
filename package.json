@@ -6,9 +6,10 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
   "devDependencies": {
-    "cross-env": "^3.2.4"
+    "cross-env": "kentcdodds/cross-env#next"
   },
   "scripts": {
-    "echo_name": "cross-env node -e \"console.log(process.env.npm_package_name)\""
+    "postinstall": "cd node_modules/cross-env && npm install --ignore-scripts && npm start build && cd ../..",
+    "echo_name": "node node_modules/cross-env/dist/bin/cross-env.js echo $npm_package_name"
   }
 }
